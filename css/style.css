@@ -32,6 +32,7 @@ body.lock {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
+  padding: 67px 0px 0px 0px;
 }
 
 .wrapper > * {
