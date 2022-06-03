@@ -1,0 +1,17 @@
+.articles-more {
+	.articles-more__title {
+		font-size: 30px;
+		line-height: 93%;
+		margin: 0px 0px 40px 0px;
+		@media (max-width: 767.98px) {
+			font-size: 20px;
+		}
+	}
+	.articlres-more__text {
+		font-size: 14px;
+		line-height: 171%;
+		p {
+			margin: 0px 0px 25px 0px;
+		}
+	}
+}

@@ -1,0 +1,155 @@
+.btn {
+	display: inline-block;
+	font-size: 14px;
+	line-height: 16px;
+	color: #e1dece;
+	width: 220px;
+	height: 62px;
+	line-height: 62 / 14 * 100%;
+	border: 1px solid #e1dece;
+	border-radius: 5px;
+	transition: all 0.3s ease 0s;
+	font-family: $fontFamily2;
+	text-align: center;
+	background-color: #191919;
+	@media (min-width: 991.98px) {
+		&:hover {
+			background: #e1dece;
+			color: #191919;
+		}
+		&:active {
+			box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+		}
+	}
+	@media (max-width: 589.98px) {
+		width: 140px;
+		height: 40px;
+		line-height: 36px;
+	}
+	&.black {
+		height: 42px;
+		@media (min-width: 991.98px) {
+			&:hover {
+				background: rgba(25, 25, 25, 0.7);
+				color: #fff;
+			}
+		}
+	}
+}
+
+.title {
+	h2 {
+		font-weight: 700;
+		font-size: 40px;
+		line-height: 45 / 40 * 100%;
+		color: #e1dece;
+		font-family: $fontFamily2;
+		@media (max-width: 767.98px) {
+			font-size: 23px;
+		}
+	}
+}
+
+.text {
+	font-size: 16px;
+	line-height: 162%;
+	@media (max-width: 589.98px) {
+		font-size: 14px;
+	}
+}
+
+.heading {
+	max-width: 620px;
+	margin: 0 0 0 auto;
+	font-size: 40px;
+	line-height: 150%;
+	color: #191919;
+	font-family: $fontFamily2;
+	@media (max-width: 767.98px) {
+		font-size: 20px;
+	}
+	b {
+		text-transform: uppercase;
+	}
+}
+
+.home {
+	padding: 0px 0px 90px 0px;
+	@media (max-width: 767.98px) {
+		padding: 0px 0px 60px 0px;
+	}
+}
+
+.arrow-flex {
+	display: flex;
+	justify-content: center;
+	margin: 30px 0px 0px 0px;
+	> div {
+		width: 40px;
+		height: 40px;
+		border-radius: 50%;
+		color: #171717;
+		margin: 0 15px;
+		background-color: #fff;
+		font-size: 15px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		cursor: pointer;
+	}
+	.swiper-button-disabled {
+		background: rgba(255, 255, 255, 0.43);
+	}
+}
+
+.bg {
+	flex: 0 0 100%;
+	min-height: 330px;
+	padding: 15px 0;
+	background-position: center;
+}
+
+
+.tab-more {
+	p {
+		line-height: 22px;
+		@media (max-width: 479.98px) {
+			font-size: 11px;
+		}
+	}
+	button {
+		display: none;
+		background: transparent;
+		border: none;
+		font-size: 10px;
+		color: #fff;
+	}
+	@media (max-width: 767.98px) {
+		#more {
+			display: none;
+		}
+		button {
+			display: inline;
+		}
+	}
+}
+
+.project__btn {
+	display: flex;
+	justify-content: space-between;
+	padding: 15px 0px 0px 0px;
+	.btn {
+		@media (max-width: 767.98px) {
+			width: 160px;
+			height: 40px;
+			line-height: 40px;
+		}
+		@media (max-width: 479.98px) {
+			width: 140px;
+			height: 40px;
+			line-height: 40px;
+			font-size: 12px;
+		}
+	}
+
+}

@@ -1,0 +1,62 @@
+.home {
+	.home__inner {
+		.home-page {
+			&.bg-project-info {
+				background-image: url(../img/home/04.jpg);
+				.home-page__inner {
+					.home-page__heading {
+						.home-page__title {
+							margin: 0px 0px 30px 0px;
+							h2 {
+								@media (max-width: 479.98px) {
+									font-size: 15px;
+								}
+							}
+						}
+						.home-page__sub {
+							font-size: 14px;
+							line-height: 157%;
+							margin: 0px 0px 13px 0px;
+							@media (max-width: 479.98px) {
+								font-size: 13px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+.projects {
+	&.pad-b {
+		@media (max-width: 767.98px) {
+			padding: 0px 0px 0px 0px;
+		}
+	}
+	.projects__title {
+		margin: 0px 0px 30px 0px;
+	}
+	.projectes__gallery {
+		display: flex;
+		flex-wrap: wrap;
+		margin:  0 -15px;
+		overflow: hidden;
+		@media (max-width: 991.98px) {
+			margin: 0 -7.5px;
+		}
+		.development-about__image {
+			flex: 0 1 50%;
+			padding: 0 15px;
+			margin: 0px 0px 30px 0px;
+			@media (max-width: 991.98px) {
+				padding: 0 7.5px;
+				margin: 0px 0px 15px 0px;
+			}
+			img {
+				border-radius: 5px;
+				height: 100%;
+			}
+		}
+	}
+}
