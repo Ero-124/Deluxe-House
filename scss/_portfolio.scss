@@ -14,7 +14,15 @@
 					font-size: 10px;
 					color: #fff;
 				}
-				@media (max-width: 767.98px) {
+			}
+		}
+	}
+}
+@media (max-width: 767.98px) {
+	.home {
+		.home__inner {
+			.home-page {
+				.home-page__sm {
 					#more {
 						display: none;
 					}
@@ -30,18 +38,10 @@
 .request {
 	.request__inner {
 		display: flex;
-		@media (max-width: 479.98px) {
-			flex-direction: column-reverse;
-		}
 		.request__image {
 			flex: 0 0 50%;
 			img {
 				height: 100%;
-				object-fit: cover;
-			}
-			@media (max-width: 479.98px) {
-				height: 200px;
-				width: 100%;
 				object-fit: cover;
 			}
 		}
@@ -54,15 +54,6 @@
 			border-top-right-radius: 5px;
 			border-bottom-right-radius: 5px;
 			padding: 0px 0px 0px 30px;
-			@media (max-width: 991.98px) {
-				padding: 10px 0 10px 10px;
-			}
-			@media (max-width: 479.98px) {
-				border-top-right-radius: 0px;
-				border-bottom-right-radius: 0px;
-				border-top-left-radius: 5px;
-				border-top-right-radius: 5px;
-			}
 			.request__heading {
 				font-weight: 700;
 				font-size: 27px;
@@ -70,13 +61,6 @@
 				line-height: 119%;
 				color: #191919;
 				margin: 0px 0px 40px 0px;
-				@media (max-width: 767.98px) {
-					font-size: 18px;
-					margin: 0px 0px 10px 0px;
-				}
-				@media (max-width: 479.98px) {
-					font-size: 16px;
-				}
 			}
 			form.request__form {
 				input {
@@ -90,22 +74,67 @@
 					&::placeholder {
 						padding: 0 0 0 55px;
 					}
-					@media (max-width: 767.98px) {
+				}
+				.request__btn {
+					width: 309px;
+					cursor: pointer;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 991.98px) {
+	.request {
+		.request__inner {
+			.request__body {
+				padding: 10px 0 10px 10px;
+			}
+		}
+	}
+}
+@media (max-width: 767.98px) {
+	.request {
+		.request__inner {
+			.request__body {
+				.request__heading {
+					font-size: 18px;
+					margin: 0px 0px 10px 0px;
+				}
+				form.request__form {
+					input {
 						width: 200px;
 						height: 40px;
 						&::placeholder {
 							padding: 0 0 0 15px;
 						}
 					}
-				}
-				.request__btn {
-					width: 309px;
-					cursor: pointer;
-					@media (max-width: 767.98px) {
+					.request__btn {
 						width: 200px;
 						height: 40px;
 						line-height: 40px;
 					}
+				}
+			}
+		}
+	}
+}
+@media (max-width: 479.98px) {
+	.request {
+		.request__inner {
+				flex-direction: column-reverse;
+			.request__image {
+					height: 200px;
+					width: 100%;
+					object-fit: cover;
+			}
+			.request__body {
+					border-top-right-radius: 0px;
+					border-bottom-right-radius: 0px;
+					border-top-left-radius: 5px;
+					border-top-right-radius: 5px;
+				.request__heading {
+						font-size: 16px;
 				}
 			}
 		}
