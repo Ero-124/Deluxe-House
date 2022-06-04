@@ -13,56 +13,24 @@
 		display: flex;
 		flex-wrap: wrap;
 		margin: 0 -15px;
-		@media (max-width: 479.98px) {
-			margin: 0 -7.5px;
-		}
 		.view-design__columns {
 			flex: 0 0 33.3333%;
 			padding: 0 15px;
 			margin: 0px 0px 60px 0px;
-			@media (max-width: 991.98px) {
-				margin: 0px 0px 40px 0px;
-			}
-			@media (max-width: 479.98px) {
-				flex: 0 0 50%;
-				padding: 0 7.5px;
-			}
+
 			.view-design__image {
 				margin: 0px 0px 36px 0px;
-				@media (max-width: 991.98px) {
-					margin: 0px 0px 20px 0px;
-				}
-				@media (max-width: 479.98px) {
-					margin: 0px 0px 15px 0px;
-				}
 			}
 			.view-design__title {
 				font-family: $fontFamily2;
 				font-size: 20px;
 				line-height: 22px;
 				margin: 0px 0px 18px 0px;
-				@media (max-width: 991.98px) {
-					font-size: 18px;
-					margin: 0px 0px 18px 0px;
-				}
-				@media (max-width: 479.98px) {
-					font-size: 15px;
-					margin: 0px 0px 14px 0px;
-				}
 			}
 			.view-design__text {
+				word-break: break-word;
 				p {
 					margin: 0px 0px 20px 0px;
-					@media (max-width: 991.98px) {
-						font-size: 14px;
-						line-height: 19px;
-						margin: 0px 0px 12px 0px;
-					}
-					@media (max-width: 479.98px) {
-					font-size: 12px;
-					line-height: 17px;
-					margin: 0px 0px 10px 0px;
-				}
 				}
 				.btn-more {
 					position: relative;
@@ -70,6 +38,62 @@
 					font-size: 14px;
 					line-height: 16px;
 					text-decoration-line: underline;
+				}
+			}
+		}
+	}
+}
+@media (max-width: 991.98px) {
+	.view-design {
+		.view-design__inner {
+			.view-design__columns {
+				margin: 0px 0px 40px 0px;
+				.view-design__image {
+					margin: 0px 0px 20px 0px;
+				}
+				.view-design__title {
+					font-size: 18px;
+					margin: 0px 0px 18px 0px;
+				}
+				.view-design__text {
+					word-break: break-word;
+					p {
+						font-size: 14px;
+						line-height: 19px;
+						margin: 0px 0px 12px 0px;
+					}
+					.btn-more {
+						position: relative;
+						font-family: $fontFamily2;
+						font-size: 14px;
+						line-height: 16px;
+						text-decoration-line: underline;
+					}
+				}
+			}
+		}
+	}
+}
+@media (max-width: 479.98px) {
+	.view-design {
+		.view-design__inner {
+			margin: 0 -7.5px;
+			.view-design__columns {
+				flex: 0 0 50%;
+				padding: 0 7.5px;
+				.view-design__image {
+					margin: 0px 0px 15px 0px;
+				}
+				.view-design__title {
+					font-size: 15px;
+					margin: 0px 0px 14px 0px;
+				}
+				.view-design__text {
+					p {
+						font-size: 12px;
+						line-height: 17px;
+						margin: 0px 0px 10px 0px;
+					}
 				}
 			}
 		}
