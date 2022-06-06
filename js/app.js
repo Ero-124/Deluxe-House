@@ -1,4 +1,6 @@
-// Меню бургер для моб.
+
+
+// Меню бургер для моб. (Jquery)
 $(document).ready(function () {
 	$('.header__menu, .header__burger').click(function (event) {
 		$('.header__menu, .header__burger').toggleClass('active');
@@ -63,7 +65,6 @@ tabItems.forEach(checkoutTabs);
 // LightGallery JS
 lightGallery(document.querySelector("#lightgallery"));
 
-// LightGallery JS
 lightGallery(document.querySelector("#lightgallery-proj"));
 
 

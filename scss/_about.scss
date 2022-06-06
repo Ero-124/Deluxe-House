@@ -2,7 +2,7 @@
 	.home__inner {
 		.home-page {
 			&.bg-about {
-				background-image: url(../img/home/03.jpg);
+				background-image: url(../img/home/03.webp);
 			}
 		}
 	}
@@ -290,13 +290,6 @@
 						right: 20px;
 						position: absolute;
 						font-size: 19px;
-					}
-				}
-			}
-			&.active {
-				._icon-arrow-bottom {
-					&::before {
-						transform: rotate(-180deg);
 					}
 				}
 			}
