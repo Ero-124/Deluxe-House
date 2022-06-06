@@ -2,11 +2,14 @@
 	.home__inner {
 		.home-page {
 			&.bg-port-articles {
-				background-image: url(../img/home/03.jpg);
+				background-image: url(../img/home/03.webp);
 			}
 			.home-page__sm {
 				max-width: 830px;
 				text-align: center;
+				#dots {
+					display: none;
+				}
 				button {
 					display: none;
 					background: transparent;
@@ -23,6 +26,9 @@
 		.home__inner {
 			.home-page {
 				.home-page__sm {
+					#dots {
+						display: inline;
+					}
 					#more {
 						display: none;
 					}

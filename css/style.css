@@ -136,10 +136,6 @@ img {
   background: #fff;
 }
 
-.ytp-large-play-button {
-  display: none !important;
-}
-
 header {
   position: fixed;
   top: 0;
@@ -648,7 +644,7 @@ header .container .header__inner .header__burger {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 93%;
           flex: 0 0 93%;
-  background-image: url(../img/home/01.jpg);
+  background-image: url(../img/home/01.webp);
   padding: 185px 0 240px 0;
 }
 
@@ -775,11 +771,11 @@ header .container .header__inner .header__burger {
 
 .projects .projects__inner .projects__columns .projects__item .projects__image {
   display: inline-block;
-  margin: 0px 0px 26px 0px;
   -webkit-transition: -webkit-filter 0.3s ease 0s;
   transition: -webkit-filter 0.3s ease 0s;
   transition: filter 0.3s ease 0s;
   transition: filter 0.3s ease 0s, -webkit-filter 0.3s ease 0s;
+  margin: 0px 0px 26px 0px;
 }
 
 .projects .projects__inner .projects__columns .projects__item .projects__image img {
@@ -1376,7 +1372,7 @@ header .container .header__inner .header__burger {
 }
 
 .services.bg-img {
-  background: url(../img/services/bg.jpg);
+  background: url(../img/services/bg.webp);
   background-repeat: no-repeat;
   background-size: cover;
   padding: 150px 0px 50px 0px;
@@ -1532,7 +1528,7 @@ header .container .header__inner .header__burger {
 }
 
 .home .home__inner .home-page.bg-repair {
-  background-image: url(../img/home/02.jpg);
+  background-image: url(../img/home/02.webp);
 }
 
 @media (max-width: 479.98px) {
@@ -2122,7 +2118,7 @@ header .container .header__inner .header__burger {
 }
 
 .home .home__inner .home-page.bg-about {
-  background-image: url(../img/home/03.jpg);
+  background-image: url(../img/home/03.webp);
 }
 
 .designe-video {
@@ -2411,11 +2407,6 @@ header .container .header__inner .header__burger {
   font-size: 19px;
 }
 
-.useful-tips .useful-tips__accordion .useful-tips__item.active ._icon-arrow-bottom::before {
-  -webkit-transform: rotate(-180deg);
-          transform: rotate(-180deg);
-}
-
 .useful-tips .useful-tips__accordion .useful-tips__content {
   position: relative;
   height: 0;
@@ -2587,12 +2578,16 @@ header .container .header__inner .header__burger {
 }
 
 .home .home__inner .home-page.bg-port-articles {
-  background-image: url(../img/home/03.jpg);
+  background-image: url(../img/home/03.webp);
 }
 
 .home .home__inner .home-page .home-page__sm {
   max-width: 830px;
   text-align: center;
+}
+
+.home .home__inner .home-page .home-page__sm #dots {
+  display: none;
 }
 
 .home .home__inner .home-page .home-page__sm button {
@@ -2604,6 +2599,9 @@ header .container .header__inner .header__burger {
 }
 
 @media (max-width: 767.98px) {
+  .home .home__inner .home-page .home-page__sm #dots {
+    display: inline;
+  }
   .home .home__inner .home-page .home-page__sm #more {
     display: none;
   }
@@ -2749,7 +2747,7 @@ header .container .header__inner .header__burger {
 }
 
 .home .home__inner .home-page.bg-project-info {
-  background-image: url(../img/home/04.jpg);
+  background-image: url(../img/home/04.webp);
 }
 
 .home .home__inner .home-page.bg-project-info .home-page__inner .home-page__heading .home-page__title {

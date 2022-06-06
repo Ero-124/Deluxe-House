@@ -50,7 +50,7 @@
 			background-size: cover;
 			&.bg-home {
 				flex: 0 0 93%;
-				background-image: url(../img/home/01.jpg);
+				background-image: url(../img/home/01.webp);
 				padding: 185px 0 240px 0;
 			}
 			.home-page__inner {
@@ -168,8 +168,9 @@
 			.projects__item {
 				.projects__image {
 					display: inline-block;
-					margin: 0px 0px 26px 0px;
 					transition: filter 0.3s ease 0s;
+					margin: 0px 0px 26px 0px;
+
 					img {
 						max-width: 100%;
 						border-radius: 5px;
@@ -681,7 +682,7 @@
 // =====================================================================================================
 .services {
 	&.bg-img {
-		background: url(../img/services/bg.jpg);
+		background: url(../img/services/bg.webp);
 		background-repeat: no-repeat;
 		background-size: cover;
 		padding: 150px 0px 50px 0px;

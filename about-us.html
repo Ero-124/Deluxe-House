@@ -11,7 +11,7 @@
 	<link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="apple-touch-icon" sizes="180x180" href="img/home/favicon.png">
-	<link rel="icon" type="image/png" sizes="32x32" href="img/home/favicon.png">
+	<link rel="icon" type="image/png" sizes="	2x32" href="img/home/favicon.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="img/home/favicon.png">
 	<link rel="manifest" href="/site.webmanifest">
 	<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
@@ -72,7 +72,7 @@
 				<div class="container">
 					<div class="designe-video__video">
 						<div class="video__item">
-							<video class="item-video" poster="img/designe/dizayn_interera_astana-011 2.jpg" controls>
+							<video class="item-video lazyload" poster="img/designe/dizayn_interera_astana-011 2.jpg" controls>
 								<source
 									src="video/y2mate.com - LUXURY INTERIOR DESIGN for spending the best life_1080p (video-converter.com).webm">
 								<source src="video/y2mate.com - LUXURY INTERIOR DESIGN for spending the best life_1080p.mp4"
@@ -116,7 +116,10 @@
 					<div class="successful__inner">
 						<div class="successful__row">
 							<div class="successful__image">
-								<img src="img/about-us/01.png" alt="">
+								<picture>
+									<source srcset="img/about-us/01pn.webp" type="image/webp">
+									<img src="img/about-us/01.png" alt="Успех">
+								</picture>
 							</div>
 							<div class="successful__title">
 								<b>10 лет</b> <br>
@@ -175,28 +178,52 @@
 					</div>
 					<div class="development-about__items" id="lightgallery">
 						<a href="img/about-us/01.jpg" class="development-about__image">
-							<img src="img/about-us/01.jpg" alt="">
+							<picture>
+								<source data-srcset="img/about-us/01.webp" type="image/webp">
+								<img data-src="img/about-us/01.jpg" alt="Дизайн" class="lazyload">
+							</picture>
 						</a>
 						<a href="img/about-us/02.jpg" class="development-about__image">
-							<img src="img/about-us/02.jpg" alt="">
+							<picture>
+								<source data-srcset="img/about-us/02.webp" type="image/webp">
+								<img data-src="img/about-us/02.jpg" alt="Дизайн" class="lazyload">
+							</picture>
 						</a>
 						<a href="img/about-us/03.jpg" class="development-about__image">
-							<img src="img/about-us/03.jpg" alt="">
+							<picture>
+								<source data-srcset="img/about-us/03.webp" type="image/webp">
+								<img data-src="img/about-us/03.jpg" alt="Дизайн" class="lazyload">
+							</picture>
 						</a>
 						<a href="img/about-us/04.jpg" class="development-about__image">
-							<img src="img/about-us/04.jpg" alt="">
+							<picture>
+								<source data-srcset="img/about-us/04.webp" type="image/webp">
+								<img data-src="img/about-us/04.jpg" alt="Дизайн" class="lazyload">
+							</picture>
 						</a>
 						<a href="img/about-us/05.jpg" class="development-about__image">
-							<img src="img/about-us/05.jpg" alt="">
+							<picture>
+								<source data-srcset="img/about-us/05.webp" type="image/webp">
+								<img data-src="img/about-us/05.jpg" alt="Дизайн" class="lazyload">
+							</picture>
 						</a>
 						<a href="img/about-us/06.jpg" class="development-about__image">
-							<img src="img/about-us/06.jpg" alt="">
+							<picture>
+								<source data-srcset="img/about-us/06.webp" type="image/webp">
+								<img data-src="img/about-us/06.jpg" alt="Дизайн" class="lazyload">
+							</picture>
 						</a>
 						<a href="img/about-us/07.jpg" class="development-about__image">
-							<img src="img/about-us/07.jpg" alt="">
+							<picture>
+								<source data-srcset="img/about-us/07.webp" type="image/webp">
+								<img data-src="img/about-us/07.jpg" alt="Дизайн" class="lazyload">
+							</picture>
 						</a>
 						<a href="img/about-us/08.jpg" class="development-about__image">
-							<img src="img/about-us/08.jpg" alt="">
+							<picture>
+								<source data-srcset="img/about-us/08.webp" type="image/webp">
+								<img data-src="img/about-us/08.jpg" alt="Дизайн" class="lazyload">
+							</picture>
 						</a>
 					</div>
 					<div class="development-about__btn">
@@ -212,7 +239,8 @@
 					</div>
 					<div class="useful-tips__accordion">
 						<div class="useful-tips__item">
-							<div class="useful-tips__label  _icon-arrow-bottom ">На что стоит обратить внимание при выборе дизайнеров?</div>
+							<div class="useful-tips__label  _icon-arrow-bottom ">На что стоит обратить внимание при выборе
+								дизайнеров?</div>
 							<div class="useful-tips__content">
 								<p>
 									Выбор стиля дизайна интерьера не должен зависеть от тренда или
@@ -238,7 +266,8 @@
 							</div>
 						</div>
 						<div class="useful-tips__item">
-							<div class="useful-tips__label _icon-arrow-bottom">Как долго разрабатывается авторский дизайн интерьера?</div>
+							<div class="useful-tips__label _icon-arrow-bottom">Как долго разрабатывается авторский дизайн
+								интерьера?</div>
 							<div class="useful-tips__content">
 								<p>
 									Мы работаем со всеми стилями: неоклассика, ар-деко, современный стиль дизайна, минимализм,
@@ -306,14 +335,17 @@
 					</div>
 					<div class="create__inner">
 						<div class="create__image">
-							<img src="img/designe/06.png" alt="">
+							<picture>
+								<source data-srcset="img/designe/06.webp" type="image/webp">
+								<img data-src="img/designe/06.png" alt="Дизайн" class="lazyload">
+							</picture>
 						</div>
 						<div class="create__body">
 							<ul class="create__list">
 								<li>Квартиры, коттеджи и дома</li>
 								<li>Кафе и бары</li>
 								<li>Спортивные помещения</li>
-								<li>Сауны, SPA и гостевые дома	</li>
+								<li>Сауны, SPA и гостевые дома </li>
 							</ul>
 							<ul class="create__list">
 								<li>Рестораны и лаунж-бары</li>
@@ -374,7 +406,10 @@
 						</div>
 					</div>
 					<div class="footer__map">
-						<img src="img/map/map.jpg" alt="">
+						<picture>
+							<source data-srcset="img/map/map.webp" type="image/webp">
+							<img data-src="img/map/map.jpg" alt="карта" class="lazyload">
+						</picture>
 					</div>
 				</div>
 			</div>
@@ -383,6 +418,7 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/lightgallery-js/1.4.0/js/lightgallery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 	<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+	<script src="js/lazysizes.min.js"></script>
 	<script src="js/app.js"></script>
 </body>
 
