@@ -1,12 +1,21 @@
+// Меню бургер для моб.
+const menu = document.getElementById('menu');
+const toggle = document.getElementById('toggle');
+const body = document.querySelector('body');
 
+document.onclick = function (e) {
+	if (e.target.id !== 'menu' && e.target.id !== 'toggle') {
+		menu.classList.remove('active');
+		toggle.classList.remove('active');
+		body.classList.remove('lock');
+	}
+}
+toggle.onclick = function () {
+	menu.classList.toggle('active');
+	toggle.classList.toggle('active');
+	body.classList.toggle('lock');
+}
 
-// Меню бургер для моб. (Jquery)
-$(document).ready(function () {
-	$('.header__menu, .header__burger').click(function (event) {
-		$('.header__menu, .header__burger').toggleClass('active');
-		$('body').toggleClass('lock');
-	});
-});
 
 // Слайдер для studios-swiper
 const studiosSwiper = new Swiper('.studios-swiper', {
@@ -94,4 +103,3 @@ function readMore() {
 		more.style.display = "inline";
 	}
 }
-
